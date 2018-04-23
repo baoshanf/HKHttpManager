@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A37F812207B4895008C1F2A /* HKHttpGroupRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A37F811207B4895008C1F2A /* HKHttpGroupRequest.m */; };
+		3A37F815207B5729008C1F2A /* HKHttpManager+Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A37F814207B5729008C1F2A /* HKHttpManager+Group.m */; };
+		3A37F818207B68CA008C1F2A /* HKHttpManager+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A37F817207B68CA008C1F2A /* HKHttpManager+Chain.m */; };
+		3A37F81B207B69FE008C1F2A /* HKHttpChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A37F81A207B69FE008C1F2A /* HKHttpChainRequest.m */; };
+		3A3DBB091FFE19D700784AE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB081FFE19D700784AE6 /* AppDelegate.m */; };
+		3A3DBB0C1FFE19D700784AE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB0B1FFE19D700784AE6 /* ViewController.m */; };
+		3A3DBB0F1FFE19D700784AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DBB0D1FFE19D700784AE6 /* Main.storyboard */; };
+		3A3DBB111FFE19D700784AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DBB101FFE19D700784AE6 /* Assets.xcassets */; };
+		3A3DBB141FFE19D700784AE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DBB121FFE19D700784AE6 /* LaunchScreen.storyboard */; };
+		3A3DBB171FFE19D700784AE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB161FFE19D700784AE6 /* main.m */; };
+		3A3DBB211FFE19D800784AE6 /* HKHttpManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB201FFE19D800784AE6 /* HKHttpManagerTests.m */; };
+		3A3DBB2C1FFE19D800784AE6 /* HKHttpManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB2B1FFE19D800784AE6 /* HKHttpManagerUITests.m */; };
+		3A3DBB431FFE25FE00784AE6 /* HKHttpLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB421FFE25FE00784AE6 /* HKHttpLogger.m */; };
+		3A3DBB461FFE28E000784AE6 /* HKHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB451FFE28E000784AE6 /* HKHttpRequest.m */; };
+		3A3DBB4A1FFE2B5F00784AE6 /* HKHttpConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB491FFE2B5F00784AE6 /* HKHttpConfigure.m */; };
+		3A3DBB4F1FFE2E9900784AE6 /* HKHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB4E1FFE2E9900784AE6 /* HKHttpResponse.m */; };
+		3A3DBB521FFE343B00784AE6 /* HKHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB511FFE343B00784AE6 /* HKHttpManager.m */; };
+		3A3DBB551FFE382000784AE6 /* HKHttpManager+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB541FFE382000784AE6 /* HKHttpManager+Validate.m */; };
+		3A3DBB601FFE47D600784AE6 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB5F1FFE47D600784AE6 /* NSString+Base64.m */; };
+		3A3DBB631FFE4D8B00784AE6 /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DBB621FFE4D8B00784AE6 /* NSDictionary+JSON.m */; };
+		60C299990AB4E6AE784D0F93 /* libPods-HKHttpManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD584EF260E7031009C1D1F6 /* libPods-HKHttpManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A3DBB1D1FFE19D800784AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A3DBAFC1FFE19D700784AE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A3DBB031FFE19D700784AE6;
+			remoteInfo = HKHttpManager;
+		};
+		3A3DBB281FFE19D800784AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A3DBAFC1FFE19D700784AE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A3DBB031FFE19D700784AE6;
+			remoteInfo = HKHttpManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A27DE9C207CBE0800B65B28 /* HKHttpManagerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHttpManagerHeader.h; sourceTree = "<group>"; };
+		3A37F810207B4895008C1F2A /* HKHttpGroupRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHttpGroupRequest.h; sourceTree = "<group>"; };
+		3A37F811207B4895008C1F2A /* HKHttpGroupRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKHttpGroupRequest.m; sourceTree = "<group>"; };
+		3A37F813207B5729008C1F2A /* HKHttpManager+Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HKHttpManager+Group.h"; sourceTree = "<group>"; };
+		3A37F814207B5729008C1F2A /* HKHttpManager+Group.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HKHttpManager+Group.m"; sourceTree = "<group>"; };
+		3A37F816207B68CA008C1F2A /* HKHttpManager+Chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HKHttpManager+Chain.h"; sourceTree = "<group>"; };
+		3A37F817207B68CA008C1F2A /* HKHttpManager+Chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HKHttpManager+Chain.m"; sourceTree = "<group>"; };
+		3A37F819207B69FE008C1F2A /* HKHttpChainRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHttpChainRequest.h; sourceTree = "<group>"; };
+		3A37F81A207B69FE008C1F2A /* HKHttpChainRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKHttpChainRequest.m; sourceTree = "<group>"; };
+		3A3DBB041FFE19D700784AE6 /* HKHttpManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKHttpManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3DBB071FFE19D700784AE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A3DBB081FFE19D700784AE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A3DBB0A1FFE19D700784AE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A3DBB0B1FFE19D700784AE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A3DBB0E1FFE19D700784AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A3DBB101FFE19D700784AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A3DBB131FFE19D700784AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A3DBB151FFE19D700784AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3DBB161FFE19D700784AE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A3DBB1C1FFE19D800784AE6 /* HKHttpManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKHttpManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3DBB201FFE19D800784AE6 /* HKHttpManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKHttpManagerTests.m; sourceTree = "<group>"; };
+		3A3DBB221FFE19D800784AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3DBB271FFE19D800784AE6 /* HKHttpManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKHttpManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3DBB2B1FFE19D800784AE6 /* HKHttpManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKHttpManagerUITests.m; sourceTree = "<group>"; };
+		3A3DBB2D1FFE19D800784AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3DBB411FFE25FE00784AE6 /* HKHttpLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHttpLogger.h; sourceTree = "<group>"; };
+		3A3DBB421FFE25FE00784AE6 /* HKHttpLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKHttpLogger.m; sourceTree = "<group>"; };
+		3A3DBB441FFE28E000784AE6 /* HKHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHttpRequest.h; sourceTree = "<group>"; };
+		3A3DBB451FFE28E000784AE6 /* HKHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKHttpRequest.m; sourceTree = "<group>"; };
+		3A3DBB481FFE2B5F00784AE6 /* HKHttpConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHttpConfigure.h; sourceTree = "<group>"; };
+		3A3DBB491FFE2B5F00784AE6 /* HKHttpConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKHttpConfigure.m; sourceTree = "<group>"; };
+		3A3DBB4B1FFE2D6500784AE6 /* HKHttpConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHttpConstant.h; sourceTree = "<group>"; };
+		3A3DBB4D1FFE2E9900784AE6 /* HKHttpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHttpResponse.h; sourceTree = "<group>"; };
+		3A3DBB4E1FFE2E9900784AE6 /* HKHttpResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKHttpResponse.m; sourceTree = "<group>"; };
+		3A3DBB501FFE343B00784AE6 /* HKHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHttpManager.h; sourceTree = "<group>"; };
+		3A3DBB511FFE343B00784AE6 /* HKHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKHttpManager.m; sourceTree = "<group>"; };
+		3A3DBB531FFE382000784AE6 /* HKHttpManager+Validate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HKHttpManager+Validate.h"; sourceTree = "<group>"; };
+		3A3DBB541FFE382000784AE6 /* HKHttpManager+Validate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HKHttpManager+Validate.m"; sourceTree = "<group>"; };
+		3A3DBB561FFE39EE00784AE6 /* HKResponseInterceptorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKResponseInterceptorProtocol.h; sourceTree = "<group>"; };
+		3A3DBB571FFE3A2000784AE6 /* HKRequestInterceptorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKRequestInterceptorProtocol.h; sourceTree = "<group>"; };
+		3A3DBB5E1FFE47D600784AE6 /* NSString+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		3A3DBB5F1FFE47D600784AE6 /* NSString+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		3A3DBB611FFE4D8B00784AE6 /* NSDictionary+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		3A3DBB621FFE4D8B00784AE6 /* NSDictionary+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		A929B1EDF29D9163C23E93EC /* Pods-HKHttpManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKHttpManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKHttpManager/Pods-HKHttpManager.debug.xcconfig"; sourceTree = "<group>"; };
+		BD584EF260E7031009C1D1F6 /* libPods-HKHttpManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HKHttpManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE97E78643A881294D2E723D /* Pods-HKHttpManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKHttpManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-HKHttpManager/Pods-HKHttpManager.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A3DBB011FFE19D700784AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C299990AB4E6AE784D0F93 /* libPods-HKHttpManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DBB191FFE19D800784AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DBB241FFE19D800784AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A3DBAFB1FFE19D700784AE6 = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB061FFE19D700784AE6 /* HKHttpManager */,
+				3A3DBB1F1FFE19D800784AE6 /* HKHttpManagerTests */,
+				3A3DBB2A1FFE19D800784AE6 /* HKHttpManagerUITests */,
+				3A3DBB051FFE19D700784AE6 /* Products */,
+				A506C8DC56C4EE1B4A89AFF7 /* Pods */,
+				E154556D8D886E4DA2D597AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A3DBB051FFE19D700784AE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB041FFE19D700784AE6 /* HKHttpManager.app */,
+				3A3DBB1C1FFE19D800784AE6 /* HKHttpManagerTests.xctest */,
+				3A3DBB271FFE19D800784AE6 /* HKHttpManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A3DBB061FFE19D700784AE6 /* HKHttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB3D1FFE21D400784AE6 /* Sources */,
+				3A3DBB071FFE19D700784AE6 /* AppDelegate.h */,
+				3A3DBB081FFE19D700784AE6 /* AppDelegate.m */,
+				3A3DBB0A1FFE19D700784AE6 /* ViewController.h */,
+				3A3DBB0B1FFE19D700784AE6 /* ViewController.m */,
+				3A3DBB0D1FFE19D700784AE6 /* Main.storyboard */,
+				3A3DBB101FFE19D700784AE6 /* Assets.xcassets */,
+				3A3DBB121FFE19D700784AE6 /* LaunchScreen.storyboard */,
+				3A3DBB151FFE19D700784AE6 /* Info.plist */,
+				3A3DBB161FFE19D700784AE6 /* main.m */,
+			);
+			path = HKHttpManager;
+			sourceTree = "<group>";
+		};
+		3A3DBB1F1FFE19D800784AE6 /* HKHttpManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB201FFE19D800784AE6 /* HKHttpManagerTests.m */,
+				3A3DBB221FFE19D800784AE6 /* Info.plist */,
+			);
+			path = HKHttpManagerTests;
+			sourceTree = "<group>";
+		};
+		3A3DBB2A1FFE19D800784AE6 /* HKHttpManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB2B1FFE19D800784AE6 /* HKHttpManagerUITests.m */,
+				3A3DBB2D1FFE19D800784AE6 /* Info.plist */,
+			);
+			path = HKHttpManagerUITests;
+			sourceTree = "<group>";
+		};
+		3A3DBB3D1FFE21D400784AE6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB471FFE2B4A00784AE6 /* configure */,
+				3A3DBB3F1FFE252200784AE6 /* logger */,
+				3A3DBB401FFE252200784AE6 /* manager */,
+				3A3DBB4C1FFE2E2700784AE6 /* response */,
+				3A3DBB3E1FFE252200784AE6 /* request */,
+				3A3DBB4B1FFE2D6500784AE6 /* HKHttpConstant.h */,
+				3A27DE9C207CBE0800B65B28 /* HKHttpManagerHeader.h */,
+				3A3DBB5E1FFE47D600784AE6 /* NSString+Base64.h */,
+				3A3DBB5F1FFE47D600784AE6 /* NSString+Base64.m */,
+				3A3DBB611FFE4D8B00784AE6 /* NSDictionary+JSON.h */,
+				3A3DBB621FFE4D8B00784AE6 /* NSDictionary+JSON.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3A3DBB3E1FFE252200784AE6 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB441FFE28E000784AE6 /* HKHttpRequest.h */,
+				3A3DBB451FFE28E000784AE6 /* HKHttpRequest.m */,
+				3A37F810207B4895008C1F2A /* HKHttpGroupRequest.h */,
+				3A37F811207B4895008C1F2A /* HKHttpGroupRequest.m */,
+				3A37F819207B69FE008C1F2A /* HKHttpChainRequest.h */,
+				3A37F81A207B69FE008C1F2A /* HKHttpChainRequest.m */,
+				3A3DBB571FFE3A2000784AE6 /* HKRequestInterceptorProtocol.h */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		3A3DBB3F1FFE252200784AE6 /* logger */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB411FFE25FE00784AE6 /* HKHttpLogger.h */,
+				3A3DBB421FFE25FE00784AE6 /* HKHttpLogger.m */,
+			);
+			path = logger;
+			sourceTree = "<group>";
+		};
+		3A3DBB401FFE252200784AE6 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB501FFE343B00784AE6 /* HKHttpManager.h */,
+				3A3DBB511FFE343B00784AE6 /* HKHttpManager.m */,
+				3A37F813207B5729008C1F2A /* HKHttpManager+Group.h */,
+				3A37F814207B5729008C1F2A /* HKHttpManager+Group.m */,
+				3A37F816207B68CA008C1F2A /* HKHttpManager+Chain.h */,
+				3A37F817207B68CA008C1F2A /* HKHttpManager+Chain.m */,
+				3A3DBB531FFE382000784AE6 /* HKHttpManager+Validate.h */,
+				3A3DBB541FFE382000784AE6 /* HKHttpManager+Validate.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		3A3DBB471FFE2B4A00784AE6 /* configure */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB481FFE2B5F00784AE6 /* HKHttpConfigure.h */,
+				3A3DBB491FFE2B5F00784AE6 /* HKHttpConfigure.m */,
+			);
+			path = configure;
+			sourceTree = "<group>";
+		};
+		3A3DBB4C1FFE2E2700784AE6 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DBB4D1FFE2E9900784AE6 /* HKHttpResponse.h */,
+				3A3DBB4E1FFE2E9900784AE6 /* HKHttpResponse.m */,
+				3A3DBB561FFE39EE00784AE6 /* HKResponseInterceptorProtocol.h */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		A506C8DC56C4EE1B4A89AFF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A929B1EDF29D9163C23E93EC /* Pods-HKHttpManager.debug.xcconfig */,
+				EE97E78643A881294D2E723D /* Pods-HKHttpManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E154556D8D886E4DA2D597AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD584EF260E7031009C1D1F6 /* libPods-HKHttpManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A3DBB031FFE19D700784AE6 /* HKHttpManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3DBB301FFE19D800784AE6 /* Build configuration list for PBXNativeTarget "HKHttpManager" */;
+			buildPhases = (
+				C7079C1E7BD646AD193EBF55 /* [CP] Check Pods Manifest.lock */,
+				3A3DBB001FFE19D700784AE6 /* Sources */,
+				3A3DBB011FFE19D700784AE6 /* Frameworks */,
+				3A3DBB021FFE19D700784AE6 /* Resources */,
+				064FDC894780CAE8DFA08A2B /* [CP] Embed Pods Frameworks */,
+				564478E77B72D1C2495A2B6B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKHttpManager;
+			productName = HKHttpManager;
+			productReference = 3A3DBB041FFE19D700784AE6 /* HKHttpManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A3DBB1B1FFE19D800784AE6 /* HKHttpManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3DBB331FFE19D800784AE6 /* Build configuration list for PBXNativeTarget "HKHttpManagerTests" */;
+			buildPhases = (
+				3A3DBB181FFE19D800784AE6 /* Sources */,
+				3A3DBB191FFE19D800784AE6 /* Frameworks */,
+				3A3DBB1A1FFE19D800784AE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A3DBB1E1FFE19D800784AE6 /* PBXTargetDependency */,
+			);
+			name = HKHttpManagerTests;
+			productName = HKHttpManagerTests;
+			productReference = 3A3DBB1C1FFE19D800784AE6 /* HKHttpManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A3DBB261FFE19D800784AE6 /* HKHttpManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3DBB361FFE19D800784AE6 /* Build configuration list for PBXNativeTarget "HKHttpManagerUITests" */;
+			buildPhases = (
+				3A3DBB231FFE19D800784AE6 /* Sources */,
+				3A3DBB241FFE19D800784AE6 /* Frameworks */,
+				3A3DBB251FFE19D800784AE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A3DBB291FFE19D800784AE6 /* PBXTargetDependency */,
+			);
+			name = HKHttpManagerUITests;
+			productName = HKHttpManagerUITests;
+			productReference = 3A3DBB271FFE19D800784AE6 /* HKHttpManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A3DBAFC1FFE19D700784AE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = hans;
+				TargetAttributes = {
+					3A3DBB031FFE19D700784AE6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3A3DBB1B1FFE19D800784AE6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A3DBB031FFE19D700784AE6;
+					};
+					3A3DBB261FFE19D800784AE6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A3DBB031FFE19D700784AE6;
+					};
+				};
+			};
+			buildConfigurationList = 3A3DBAFF1FFE19D700784AE6 /* Build configuration list for PBXProject "HKHttpManager" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A3DBAFB1FFE19D700784AE6;
+			productRefGroup = 3A3DBB051FFE19D700784AE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A3DBB031FFE19D700784AE6 /* HKHttpManager */,
+				3A3DBB1B1FFE19D800784AE6 /* HKHttpManagerTests */,
+				3A3DBB261FFE19D800784AE6 /* HKHttpManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A3DBB021FFE19D700784AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3DBB141FFE19D700784AE6 /* LaunchScreen.storyboard in Resources */,
+				3A3DBB111FFE19D700784AE6 /* Assets.xcassets in Resources */,
+				3A3DBB0F1FFE19D700784AE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DBB1A1FFE19D800784AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DBB251FFE19D800784AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		064FDC894780CAE8DFA08A2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HKHttpManager/Pods-HKHttpManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		564478E77B72D1C2495A2B6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HKHttpManager/Pods-HKHttpManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7079C1E7BD646AD193EBF55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HKHttpManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A3DBB001FFE19D700784AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37F818207B68CA008C1F2A /* HKHttpManager+Chain.m in Sources */,
+				3A3DBB521FFE343B00784AE6 /* HKHttpManager.m in Sources */,
+				3A3DBB431FFE25FE00784AE6 /* HKHttpLogger.m in Sources */,
+				3A3DBB0C1FFE19D700784AE6 /* ViewController.m in Sources */,
+				3A3DBB631FFE4D8B00784AE6 /* NSDictionary+JSON.m in Sources */,
+				3A37F812207B4895008C1F2A /* HKHttpGroupRequest.m in Sources */,
+				3A37F81B207B69FE008C1F2A /* HKHttpChainRequest.m in Sources */,
+				3A3DBB461FFE28E000784AE6 /* HKHttpRequest.m in Sources */,
+				3A3DBB601FFE47D600784AE6 /* NSString+Base64.m in Sources */,
+				3A3DBB4F1FFE2E9900784AE6 /* HKHttpResponse.m in Sources */,
+				3A37F815207B5729008C1F2A /* HKHttpManager+Group.m in Sources */,
+				3A3DBB4A1FFE2B5F00784AE6 /* HKHttpConfigure.m in Sources */,
+				3A3DBB551FFE382000784AE6 /* HKHttpManager+Validate.m in Sources */,
+				3A3DBB171FFE19D700784AE6 /* main.m in Sources */,
+				3A3DBB091FFE19D700784AE6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DBB181FFE19D800784AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3DBB211FFE19D800784AE6 /* HKHttpManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DBB231FFE19D800784AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3DBB2C1FFE19D800784AE6 /* HKHttpManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A3DBB1E1FFE19D800784AE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A3DBB031FFE19D700784AE6 /* HKHttpManager */;
+			targetProxy = 3A3DBB1D1FFE19D800784AE6 /* PBXContainerItemProxy */;
+		};
+		3A3DBB291FFE19D800784AE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A3DBB031FFE19D700784AE6 /* HKHttpManager */;
+			targetProxy = 3A3DBB281FFE19D800784AE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A3DBB0D1FFE19D700784AE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A3DBB0E1FFE19D700784AE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A3DBB121FFE19D700784AE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A3DBB131FFE19D700784AE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A3DBB2E1FFE19D800784AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A3DBB2F1FFE19D800784AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A3DBB311FFE19D800784AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A929B1EDF29D9163C23E93EC /* Pods-HKHttpManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HKHttpManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hans.HKHttpManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A3DBB321FFE19D800784AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE97E78643A881294D2E723D /* Pods-HKHttpManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HKHttpManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hans.HKHttpManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A3DBB341FFE19D800784AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HKHttpManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hans.HKHttpManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKHttpManager.app/HKHttpManager";
+			};
+			name = Debug;
+		};
+		3A3DBB351FFE19D800784AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HKHttpManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hans.HKHttpManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKHttpManager.app/HKHttpManager";
+			};
+			name = Release;
+		};
+		3A3DBB371FFE19D800784AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HKHttpManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hans.HKHttpManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HKHttpManager;
+			};
+			name = Debug;
+		};
+		3A3DBB381FFE19D800784AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HKHttpManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hans.HKHttpManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HKHttpManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A3DBAFF1FFE19D700784AE6 /* Build configuration list for PBXProject "HKHttpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3DBB2E1FFE19D800784AE6 /* Debug */,
+				3A3DBB2F1FFE19D800784AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3DBB301FFE19D800784AE6 /* Build configuration list for PBXNativeTarget "HKHttpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3DBB311FFE19D800784AE6 /* Debug */,
+				3A3DBB321FFE19D800784AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3DBB331FFE19D800784AE6 /* Build configuration list for PBXNativeTarget "HKHttpManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3DBB341FFE19D800784AE6 /* Debug */,
+				3A3DBB351FFE19D800784AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3DBB361FFE19D800784AE6 /* Build configuration list for PBXNativeTarget "HKHttpManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3DBB371FFE19D800784AE6 /* Debug */,
+				3A3DBB381FFE19D800784AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A3DBAFC1FFE19D700784AE6 /* Project object */;
+}
