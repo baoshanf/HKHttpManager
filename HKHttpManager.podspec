@@ -25,7 +25,7 @@ s.summary      = "对AFNetworking的二次封装，支持App复杂的网络处�
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 s.description  = <<-DESC
-对AFNetworking的二次封装，支持App复杂的网络处理.
+对AFNetworking的二次封装，支持App复杂的网络处理,类似于YTKNetworking，但是要简介一些
 DESC
 
 s.homepage     = "https://github.com/baoshanf/HKHttpManager.git"
@@ -91,7 +91,7 @@ s.source       = { :git => "https://github.com/baoshanf/HKHttpManager.git", :tag
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "HKHttpManager/Sources/*.{h,m}"
+s.source_files  = "HKHttpManager/**/**/*.h"
 # s.exclude_files = "Classes/*.h"
 
 # s.public_header_files = "Classes/**/*.h"
