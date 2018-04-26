@@ -18,7 +18,8 @@ typedef NS_ENUM (NSUInteger, HKHttpRequestType){
     HKHttpRequestTypeGet,
     HKHttpRequestTypePost,
     HKHttpRequestTypePut,
-    HKHttpRequestTypeDelete
+    HKHttpRequestTypeDelete,
+    HKHttpRequestTypePatch
 };
 
 typedef NS_ENUM (NSUInteger, HKHttpResponseStatus){

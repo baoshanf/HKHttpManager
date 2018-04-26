@@ -16,10 +16,8 @@
 @property (nonatomic, strong, readonly) HKHttpRequest *runningRequest;
 
 - (HKHttpChainRequest *)onFirst:(HKRequestConfigBlock)firstBlock;
-- (HKHttpChainRequest *)onFirstReqeust:(HKHttpRequest *)request UNAVAILABLE_ATTRIBUTE;
 
 - (HKHttpChainRequest *)onNext:(HKNextBlock)nextBlock;
-- (HKHttpChainRequest *)onNextReqeust:(HKHttpRequest *)request UNAVAILABLE_ATTRIBUTE;
 
 - (BOOL)onFinishedOneRequest:(HKHttpRequest *)request response:(nullable HKHttpResponse *)responseObject;
 @end

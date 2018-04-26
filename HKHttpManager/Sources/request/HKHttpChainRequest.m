@@ -37,19 +37,13 @@
     firstBlock(_runningRequest);
     return self;
 }
-- (HKHttpChainRequest *)onFirstReqeust:(HKHttpRequest *)request {
-    _runningRequest = request;
-    return self;
-}
 
 - (HKHttpChainRequest *)onNext:(HKNextBlock)nextBlock {
     NSAssert(nextBlock != nil, @"The next block for chain requests can't be nil.");
     [_nextBlockArray addObject:nextBlock];
     return self;
 }
-- (HKHttpChainRequest *)onNextReqeust:(HKHttpRequest *)request {
-    return self;
-}
+
 
 - (BOOL)onFinishedOneRequest:(HKHttpRequest *)request response:(nullable HKHttpResponse *)responseObject {
     BOOL isFinished = NO;

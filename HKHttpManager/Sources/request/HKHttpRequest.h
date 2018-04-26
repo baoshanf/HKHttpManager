@@ -15,7 +15,7 @@
 
 
 /**
- 请求 Base URL，优先级高于 [NNNetConfigure generalServer];
+ 请求 Base URL，优先级高于 [HKHttpConfigure generalServer];
  */
 @property (nonatomic, copy) NSString *baseURL;
 
@@ -40,7 +40,7 @@
 @property (nonatomic, strong) NSDictionary *normalParams;
 
 /**
- 请求方式 默认为 NNRequestTypePost
+ 请求方式 默认为 HKRequestTypePost
  */
 @property (nonatomic, assign) HKHttpRequestType requestMethod;
 

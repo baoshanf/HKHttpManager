@@ -13,7 +13,6 @@
 #import "HKHttpRequest.h"
 #import "HKHttpConstant.h"
 #import "HKHttpResponse.h"
-#import "NSString+AES.h"
 #import "HKHttpManager.h"
 #import "HKHttpConfigure.h"
 #import "HKHttpGroupRequest.h"

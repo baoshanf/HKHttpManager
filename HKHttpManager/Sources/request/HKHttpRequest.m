@@ -84,6 +84,8 @@
             return @"PUT";
         case HKHttpRequestTypeDelete:
             return @"DELETE";
+        case HKHttpRequestTypePatch:
+            return @"PATCH";
         default:
             break;
     }
