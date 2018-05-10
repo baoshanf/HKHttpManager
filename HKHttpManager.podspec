@@ -91,10 +91,10 @@ s.source       = { :git => "https://github.com/baoshanf/HKHttpManager.git", :tag
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "HKHttpManager/Sources/**/**/*.h"
+s.source_files  = "HKHttpManager/Sources/**/**/*.{h,m}"
 # s.exclude_files = "Classes/*.h"
 
-# s.public_header_files = "Classes/**/*.h"
+ s.public_header_files = "HKHttpManager/HKHttpManager/HKHttpManagerHeader.h"
 
 
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
