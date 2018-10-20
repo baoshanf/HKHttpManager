@@ -61,3 +61,4 @@
  */
 - (void)cancelRequestWithRequestIDList:(nonnull NSArray<NSString *> *)requestIDList;
 @end
+

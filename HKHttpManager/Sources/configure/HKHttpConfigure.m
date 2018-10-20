@@ -45,4 +45,11 @@
     [mDict removeObjectForKey:sKey];
     manager.generalParameters = mDict.copy;
 }
+#pragma mark - private
+- (NSString *)respondeSuccessCode{
+    if (!_respondeSuccessCode) {
+        _respondeSuccessCode = @"200";
+    }
+    return _respondeSuccessCode;
+}
 @end

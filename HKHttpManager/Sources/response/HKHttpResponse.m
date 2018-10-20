@@ -7,6 +7,7 @@
 //
 
 #import "HKHttpResponse.h"
+#import "HKHttpConfigure.h"
 
 @interface HKHttpResponse()
 
@@ -59,43 +60,48 @@
         self.status = HKHttpResponseStatusError;
         self.content = @"网络异常，请稍后再试";
         self.statueCode = error.code;
+        return;
     }
-    else
+    
+    if (self.rawData.length > 0)
     {
-        if (self.rawData.length > 0)
+        NSDictionary *dic = [self jsonWithData:self.rawData];
+        BOOL result = NO;
+        if ([dic[@"code"] isMemberOfClass:[NSString class]]) {
+            result = [dic[@"code"] isEqualToString:[HKHttpConfigure shareInstance].respondeSuccessCode];
+        }else if ([dic[@"code"] isMemberOfClass:[NSNumber class]]){
+            result = [dic[@"code"] integerValue] == [[HKHttpConfigure shareInstance].respondeSuccessCode integerValue];
+        }
+        
+        if (result)
         {
-            NSDictionary *dic = [self jsonWithData:self.rawData];
-            
-            BOOL result = [dic[@"code"] integerValue] == 200;
-            if (result)
-            {
-                self.status = HKHttpResponseStatusSuccess;
-                self.content = [self processCotnentValue:dic];
-                NSString *code = dic[@"code"];
-                if (code && [code isKindOfClass:[NSString class]]) {
-                    self.statueCode = ((NSString*)code).integerValue;
-                }
-            }
-            else
-            {
-                self.status = HKHttpResponseStatusError;
-                self.content = dic[@"msg"];
-                NSString *code = dic[@"code"];
-                if (code && [code isKindOfClass:[NSString class]]) {
-                    self.statueCode = ((NSString*)code).integerValue;
-                }
-                if (![self.content isKindOfClass:[NSString class]]) {
-                    self.content = @"未知错误";
-                }
+            self.status = HKHttpResponseStatusSuccess;
+            self.content = [self processCotnentValue:dic];
+            NSString *code = dic[@"code"];
+            if (code && [code isKindOfClass:[NSString class]]) {
+                self.statueCode = ((NSString*)code).integerValue;
             }
         }
         else
         {
-            self.statueCode = NSURLErrorUnknown;
             self.status = HKHttpResponseStatusError;
-            self.content = @"未知错误";
+            self.content = dic[@"msg"];
+            NSString *code = dic[@"code"];
+            if (code && [code isKindOfClass:[NSString class]]) {
+                self.statueCode = ((NSString*)code).integerValue;
+            }
+            if (![self.content isKindOfClass:[NSString class]]) {
+                self.content = @"未知错误";
+            }
         }
     }
+    else
+    {
+        self.statueCode = NSURLErrorUnknown;
+        self.status = HKHttpResponseStatusError;
+        self.content = @"未知错误";
+    }
+    
 }
 
  /**

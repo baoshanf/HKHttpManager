@@ -23,8 +23,8 @@ typedef NS_ENUM (NSUInteger, HKHttpRequestType){
 };
 
 typedef NS_ENUM (NSUInteger, HKHttpResponseStatus){
-    HKHttpResponseStatusSuccess = 1,
-    HKHttpResponseStatusError
+    HKHttpResponseStatusError = 0,
+    HKHttpResponseStatusSuccess = 1
 };
 ///响应配置 Block
 typedef void (^HKHttpResponseBlock)(HKHttpResponse * _Nullable response);

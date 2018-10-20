@@ -25,6 +25,9 @@
 ///服务器地址 默认：
 @property (nonatomic, copy, readwrite, nonnull) NSString *generalServer;
 
+///与后端约定的请求成功Code
+@property (nonatomic,copy)NSString *respondeSuccessCode;
+
 ///是否为调试模式（默认 false, 当为 true 时，会输出 网络请求日志）
 @property (nonatomic, readwrite) BOOL enableDebug;
 
