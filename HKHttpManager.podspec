@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "HKHttpManager"
-s.version      = "0.0.3"
+s.version      = "0.0.4"
 s.summary      = "对AFNetworking的二次封装，支持App复杂的网络处理."
 
 

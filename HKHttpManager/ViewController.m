@@ -21,6 +21,7 @@
 //    [self sendBasicRequest];
     [self sendChainRequest];
     [self sendGroupRequest];
+    [HKHttpConfigure shareInstance].enableDebug = YES;
 }
 
 /**
@@ -29,9 +30,9 @@
 - (void)sendBasicRequest{
         HKHttpRequest *request = [[HKHttpRequest alloc] init];
         request.requestURL = @"satinApi";
-        request.normalParams = @{@"type":@"1",
-                                 @"page":@"1"
-                                 };
+//        request.normalParams = @{@"type":@"1",
+//                                 @"page":@"1"
+//                                 };
     [[HKHttpManager shareManager] sendRequest:request complete:^(HKHttpResponse * _Nullable response) {
         
     }];
